@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Set up WebView
         webView = findViewById(R.id.webView);
-        WebSettings webSettings = mWebView.getSettings();
+        WebSettings webSettings = webView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
         loadHomePage(); // Load the initial home page
